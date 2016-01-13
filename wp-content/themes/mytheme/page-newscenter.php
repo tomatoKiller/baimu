@@ -1,4 +1,7 @@
 <?php
+/*
+	Template Name: news center page
+*/
 	get_header();
 ?>
 

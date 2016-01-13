@@ -22,6 +22,11 @@
 		    	visible:3
 		    });
 		   });
+
+			 jQuery(document).ready(function(){
+	 		    jQuery('#myCarousel').carousel({
+	 		    });
+	 		   });
 	</script>
 
 </body>
