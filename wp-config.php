@@ -21,16 +21,22 @@
 // ** MySQL 设置 - 具体信息来自您正在使用的主机 ** //
 /** WordPress数据库的名称 */
 
-define('DB_NAME', 'app_baimushiye');
+if(! defined(SAE_MYSQL_HOST_M)) {
+  define('SAE_MYSQL_USER', 'root'); //用户名
+  define('SAE_MYSQL_PASS', '123'); //密　　码
+  define('SAE_MYSQL_HOST_M', 'localhost'); //主库域名
+  define('SAE_MYSQL_HOST_S', 'localhost'); //从库域名
+  define('SAE_MYSQL_PORT', 3306); //端　　口
+  define('SAE_MYSQL_DB', 'wordpress'); //数据库名
+}
 
-/** MySQL数据库用户名 */
-define('DB_USER', 'SAE_MYSQL_USER');
+define('DB_NAME', SAE_MYSQL_DB);
 
-/** MySQL数据库密码 */
-define('DB_PASSWORD', 'SAE_MYSQL_PASS');
+define('DB_USER', SAE_MYSQL_USER);
 
-/** MySQL主机 */
-define('DB_HOST', 'SAE_MYSQL_HOST_M:SAE_MYSQL_PORT');
+define('DB_PASSWORD', SAE_MYSQL_PASS);
+
+define('DB_HOST', SAE_MYSQL_HOST_M.':'.SAE_MYSQL_PORT);
 
 // define('DB_NAME', 'wordpress');
 //
