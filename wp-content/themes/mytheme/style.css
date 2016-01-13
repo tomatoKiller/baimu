@@ -1,0 +1,61 @@
+/*
+Theme Name: Tutorial
+
+Theme URI:
+
+Description: This is my theme for a tutorial.
+
+Version: 1.0
+
+Author: Small Potato
+
+Author URI: http://www.wpdesigner.com/
+
+*/
+
+
+@import url('bootstrap/css/bootstrap.css');
+
+/*body {
+	background:url('images/background.jpg') top center no-repeat;
+	background-size:cover;
+}*/
+.navbar{
+	padding: 0;
+	margin: 0;
+}
+
+div #myCarousel
+{
+	padding: 0;
+	margin: 0;
+}
+#myCarousel
+{
+    height: 400px;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.carousel .item
+{
+    height: 500px;//固定高度
+    background-color: #000;
+}
+
+#myCarousel img
+{
+    width: 100%;//图片自适应
+}
+
+.corebusiness
+{
+	text-align:center;
+	border-right:solid;
+	border-width: 1px;
+}
+
+.content p
+{
+	text-indent: 2em;
+}
