@@ -1,34 +1,13 @@
 
 <?php get_header(); ?>
 
-<div id="myCarousel" class="carousel slide">
-		   <!-- 轮播（Carousel）指标 -->
-		   <ol class="carousel-indicators">
-		      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		      <li data-target="#myCarousel" data-slide-to="1"></li>
-		      <li data-target="#myCarousel" data-slide-to="2"></li>
-		   </ol>
-		   <!-- 轮播（Carousel）项目 -->
-		   <div class="carousel-inner">
-		      <div class="item active">
-		         <img src="<?php echo get_template_directory_uri().'/images/1.jpg' ; ?>" alt="First slide">
-		         <div class="carousel-caption">标题 1</div>
-		      </div>
-		      <div class="item">
-		         <img src="<?php echo get_template_directory_uri().'/images/2.jpg' ; ?>" alt="Second slide">
-		         <div class="carousel-caption">标题 2</div>
-		      </div>
-		      <div class="item">
-		         <img src="<?php echo get_template_directory_uri().'/images/3.jpg' ; ?>" alt="Third slide">
-		         <div class="carousel-caption">标题 3</div>
-		      </div>
-		   </div>
-		   <!-- 轮播（Carousel）导航 -->
-		   <a class="carousel-control left" href="#myCarousel"
-		      data-slide="prev">&lsaquo;</a>
-		   <a class="carousel-control right" href="#myCarousel"
-		      data-slide="next">&rsaquo;</a>
-		</div>
+<div class="main">
+	<ul class="bxsliderHeader">
+		<li><img src="<?php echo get_template_directory_uri().'/images/1.jpg' ; ?>" title="旭日实业自有大型矿山，为承接国内外业务，全面满足市场需求提供了有力的保证"></li>
+		<li><img src="<?php echo get_template_directory_uri().'/images/2.jpg' ; ?>" title="旭日实业拥有丰富的资源，且质量一流，热忱的服务，卓越的精品博得客户的肯定。有实力，当然表现更超众"></li>
+	</ul>
+</div>
+
 
 <div class="container">
 <br><br>
@@ -75,7 +54,27 @@
 
 <hr>
 
+
 <div class="row">
+	<div class="col-xs-2"></div>
+	<div class="col-xs-8">
+		<h2 align="center">公司资质</h2>
+		<hr>
+		<ul class="bxslider">
+		<?php 
+		   	for( $i = 1; $i < 13; $i++) {
+		   		echo '<li><img src="' . get_template_directory_uri()."/images/zhengjian$i.jpg\"" . ' width="180" height= "180"/></li>';
+		   	}
+		?>
+		</ul>
+	</div>
+	<div class="col-xs-2"></div>
+</div>
+
+<hr>
+
+
+<div class="row"><hr>
 	<h2 style="text-align:center;">核心业务</h2>
 	<div class="col-xs-1"></div>
 	<div class="col-xs-5 corebusiness">
@@ -144,5 +143,40 @@
 	</div>
 	<div class="col-xs-1"></div>
 </div>
+
+<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery('#productCarousel').carousel({
+		    		visible:3
+		    	});
+		    	jQuery('#zhengjianCarousel').carousel('cycle');
+		    	jQuery('.bxslider').bxSlider({
+			    	minSlides: 1,
+				maxSlides: 4,
+				moveSlides: 1,
+				slideWidth: 180,
+				speed: 100,
+				slideMargin: 10,
+				auto: true,
+				autoHover: true,
+				controls: true
+			});
+		    	jQuery('.bxsliderHeader').bxSlider(
+		    		{
+			    	minSlides: 1,
+				maxSlides: 1,
+				slideMargin: 0,
+				captions: true,
+				auto: true,
+				pager: false,
+				controls: false
+			});
+ 
+		});
+
+		jQuery(document).ready(function(){
+			jQuery('#myCarousel').carousel();
+	 	});
+	</script>
 
 <?php get_footer(); ?>

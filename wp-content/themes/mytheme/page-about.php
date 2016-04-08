@@ -3,6 +3,12 @@
 
 ?>
 
+<div class="main">
+
+        <img src="<?php echo get_template_directory_uri().'/images/businessSmall.png' ; ?>">
+       
+</div>
+
 <div class="row">
 	<div class="col-xs-1"></div>
 	<div class="col-xs-2">

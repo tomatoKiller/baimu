@@ -34,19 +34,15 @@ if( function_exists('register_nav_menus') ){
     );
 }
 
+function my_scripts() {
+    wp_register_script('bxslider', get_template_directory_uri() . '/js/jquery.bxslider.js', array( 'jquery' ) );
+    wp_register_style('bxslider', get_template_directory_uri() . '/css/jquery.bxslider.css');
 
-//注册侧边栏
-// if ( function_exists('register_sidebar') ) {
-//   register_sidebar(array(
-//     'name'=>'首页侧边栏',
-//     'before_widget' => '<li id="%1$s" class="sidebar_li %2$s">',
-//     'after_widget' => '</li>',
-//     'before_title' => '<h3>',
-//     'after_title' => '</h3>',
-//   ));
-// }
+        wp_enqueue_script( 'bxslider' );  
+        wp_enqueue_style( 'bxslider' );  
 
-
+}
+add_action( 'init', 'my_scripts' );
 
 function get_page_url($slug) { //slug
 	global $wpdb;

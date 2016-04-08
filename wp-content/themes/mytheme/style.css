@@ -16,6 +16,7 @@ Author URI: http://www.wpdesigner.com/
 
 @import url('bootstrap/css/bootstrap.css');
 
+
 /*body {
 	background:url('images/background.jpg') top center no-repeat;
 	background-size:cover;
@@ -54,8 +55,39 @@ div #myCarousel
 	border-right:solid;
 	border-width: 1px;
 }
-
 .content p
 {
 	text-indent: 2em;
+}
+.main .bx-wrapper
+{
+	  -moz-box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+  border: 0px solid #fff;
+  background: #fff;
+}
+.main img
+{
+	width: 100%;
+	height: 500px;
+}
+.main .bx-wrapper .bx-caption span {
+  color: #fff;
+  font-family: Arial;
+  display: block;
+  font-size: 1.15em;
+  padding: 10px;
+  text-align: center;
+}
+
+div.companyintroduction
+{
+		line-height: 200%;
+}
+
+.companyintroduction p
+{
+	text-indent: 2em;
+	margin:0 auto
 }
