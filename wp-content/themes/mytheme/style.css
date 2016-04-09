@@ -61,11 +61,11 @@ div #myCarousel
 }
 .main .bx-wrapper
 {
-	  -moz-box-shadow: 0 0 5px #ccc;
-  -webkit-box-shadow: 0 0 5px #ccc;
-  box-shadow: 0 0 5px #ccc;
-  border: 0px solid #fff;
-  background: #fff;
+	-moz-box-shadow: 0 0 5px #ccc;
+	-webkit-box-shadow: 0 0 5px #ccc;
+	box-shadow: 0 0 5px #ccc;
+	border: 0px solid #fff;
+	background: #fff;
 }
 .main img
 {
@@ -73,12 +73,12 @@ div #myCarousel
 	height: 500px;
 }
 .main .bx-wrapper .bx-caption span {
-  color: #fff;
-  font-family: Arial;
-  display: block;
-  font-size: 1.15em;
-  padding: 10px;
-  text-align: center;
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: 1.15em;
+	padding: 10px;
+	text-align: center;
 }
 
 div.companyintroduction
@@ -90,4 +90,9 @@ div.companyintroduction
 {
 	text-indent: 2em;
 	margin:0 auto
+}
+
+.zhanshi img
+{
+	width: 100%;
 }

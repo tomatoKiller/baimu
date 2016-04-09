@@ -18,7 +18,7 @@
     <div class="list-group">
       <a href="<?php echo get_page_url("companyintroduction")?>" class="list-group-item list-group-item-success">百慕简介</a>
       <a href="<?php echo get_page_url("businessintroduction")?>" class="list-group-item list-group-item-success">经营业务</a>
-      <a href="#" class="list-group-item list-group-item-success">发展历程</a>
+      <a href="<?php echo get_page_url("companyshow")?>" class="list-group-item list-group-item-success">企业展示</a>
       <a href="#" class="list-group-item list-group-item-success">管理人员</a>
     </div>
   </div>

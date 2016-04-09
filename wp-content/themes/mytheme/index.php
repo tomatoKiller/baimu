@@ -74,7 +74,7 @@
 <hr>
 
 
-<div class="row"><hr>
+<div class="row">
 	<h2 style="text-align:center;">核心业务</h2>
 	<div class="col-xs-1"></div>
 	<div class="col-xs-5 corebusiness">
@@ -88,67 +88,11 @@
 	<div class="col-xs-1"></div>
 </div>
 <hr>
-<div class="row">
-	<div class="col-xs-1"></div>
-	<div class="col-xs-10">
 
-		<br>
-
-		<div class="col-xs-3">
-			<h2 align="center">网上咨询</h2>
-			<hr>
-			<a href="#" class="btn btn-primary btn-lg btn-block disabled" role="button">服务热线 <br> 0371-55238137</a>
-			<a href="#" class="btn btn-primary btn-lg btn-block" role="button">网上咨询</a>
-		</div>
-		<div class="col-xs-9">
-			<h2 align="center">产品展示</h2>
-			<hr>
-			<div id="productCarousel" class="carousel slide pad_010 b_k" data-ride="carousel">
-		      <!-- 轮播（Carousel）指标 -->
-		      <ol class="carousel-indicators">
-		          <li data-target="#productCarousel" data-slide-to="0" class="active"></li>
-		          <li data-target="#productCarousel" data-slide-to="1"></li>
-		          <li data-target="#productCarousel" data-slide-to="2"></li>
-		      </ol>
-		      <!-- 轮播（Carousel）项目 -->
-		      <div class="carousel-inner bor_btm">
-		          <div class="item active" >
-		              <div class="pic">
-		                  <img src="<?php echo get_template_directory_uri().'/images/s1.jpg' ; ?>" width="200" alt="" >
-		                  <img src="<?php echo get_template_directory_uri().'/images/s2.jpg' ; ?>" width="200" alt="" >
-		                  <img src="<?php echo get_template_directory_uri().'/images/s3.jpg' ; ?>" width="200" alt="" >
-		              </div>
-		          </div>
-		          <div class="item">
-		              <div class="pic">
-		                  <img src="<?php echo get_template_directory_uri().'/images/s2.jpg' ; ?>"  height="75" alt="" >
-		                  <img src="<?php echo get_template_directory_uri().'/images/s2.jpg' ; ?>" height="75" alt="" >
-		                  <img src="<?php echo get_template_directory_uri().'/images/s3.jpg' ; ?>" height="75" alt="" >
-		              </div>
-		          </div>
-		          <div class="item">
-		              <div class="pic">
-		                  <img src="<?php echo get_template_directory_uri().'/images/s3.jpg' ; ?>" >
-		                  <img src="<?php echo get_template_directory_uri().'/images/s2.jpg' ; ?>" >
-		                  <img src="<?php echo get_template_directory_uri().'/images/s3.jpg' ; ?>" >
-		              </div>
-		          </div>
-		       </div>
-		       <!-- 轮播（Carousel）导航 -->
-		       <a class="carousel-control left" href="#productCarousel" data-slide="prev">&lsaquo;</a>
-		       <a class="carousel-control right" href="#productCarousel" data-slide="next">&rsaquo;</a>
-		    </div>
-
-		</div>
-	</div>
-	<div class="col-xs-1"></div>
-</div>
 
 <script type="text/javascript">
 		jQuery(document).ready(function(){
-			jQuery('#productCarousel').carousel({
-		    		visible:3
-		    	});
+
 		    	jQuery('#zhengjianCarousel').carousel('cycle');
 		    	jQuery('.bxslider').bxSlider({
 			    	minSlides: 1,
@@ -159,10 +103,10 @@
 				slideMargin: 10,
 				auto: true,
 				autoHover: true,
+				pager: false,
 				controls: true
 			});
-		    	jQuery('.bxsliderHeader').bxSlider(
-		    		{
+		    	jQuery('.bxsliderHeader').bxSlider({
 			    	minSlides: 1,
 				maxSlides: 1,
 				slideMargin: 0,

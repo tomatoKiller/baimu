@@ -20,7 +20,13 @@ Template Name: business introduction page
     <h3>矿山石材</h3>
     <hr>
 
-    多久开发建设机房设计费neon佛你你问佛我呢佛你问
+	<div>
+		<ul class="bxsliderShicai">
+			<li><img src="<?php echo get_template_directory_uri().'/images/shicai8.jpg' ; ?>" ></li>
+			<li><img src="<?php echo get_template_directory_uri().'/images/shicai9.jpg' ; ?>" ></li>
+			<li><img src="<?php echo get_template_directory_uri().'/images/shicai10.jpg' ; ?>" ></li>
+		</ul>
+	</div>
 
     <br><br>
     <h3>园林绿化</h3>
@@ -32,3 +38,21 @@ Template Name: business introduction page
   </div>
   <div class="col-xs-1"></div>
 </div>
+
+<script type="text/javascript">
+		jQuery(document).ready(function(){
+		
+		    	jQuery('.bxsliderShicai').bxSlider({
+			    	minSlides: 1,
+				maxSlides: 1,
+				slideMargin: 0,
+				auto: true,
+				pager: false,
+			});
+ 
+		});
+
+
+	</script>
+
+<?php get_footer(); ?>

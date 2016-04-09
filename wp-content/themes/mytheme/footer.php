@@ -1,7 +1,8 @@
 <div class="row">
+	<br><br><br>
 	<div class="col-xs-1"></div>
 	<div class="col-xs-10">
-		<hr>
+		<hr style="height:2px;border-width:0;color:gray;background-color:gray" />
 			<p align="center">
 				河南旭日石业有限公司 版权所有 <br>
 				矿山地址：河南省泌阳县象河乡石材产业聚集区B区（象河乡派出所对面）<br>

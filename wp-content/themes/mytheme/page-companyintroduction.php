@@ -12,7 +12,7 @@ Template Name: company introduction page
 	<hr>
 	<br>
 	<div class="row companyintroduction">
-		<div class="col-xs-4" style="font-family:'文鼎中行书简';">
+		<div class="col-xs-4">
     		    恪守诚信理念<br>
 		    精做一流工程<br>
 		    携手共享共荣<br>
